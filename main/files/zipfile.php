@@ -4,12 +4,14 @@
  * (c) 2012-2014: Marvin Menzerath - http://menzerath.eu
 */
 // Make sure the script can handle large folders/files
+
+
 error_reporting(E_ALL);
 ini_set('display_errors',-1);
 ini_set('max_execution_time', 1200);
 ini_set('memory_limit','1024M');
 
-// Here the magic happens :)
+
 function zipData($source, $destination) {
 	if (extension_loaded('zip')) {
 		if (file_exists($source)) {
